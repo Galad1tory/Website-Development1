@@ -1,0 +1,23 @@
+/* Reusable style for all Week links */
+.week-link{
+  font-weight: 700;
+  text-decoration: none;
+  background: linear-gradient(0deg, #ff004c, #ff8a00, #ffd300, #00e676, #00b0ff, #7c4dff, #ff4081, #ff004c);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: weeklink-rainbow 6s linear infinite;
+  text-shadow: 0 7px 5px rgba(0,0,0,0.25);
+}
+
+.week-link:hover, .week-link:focus{
+  text-decoration: underline;
+}
+
+@keyframes weeklink-rainbow{
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
