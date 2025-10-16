@@ -30,3 +30,9 @@ h1{
         margin:1em auto;
 
 }
+.container {
+        width: 300px;
+        background-color: Gainsboro;
+        padding: 10px;
+        text-align: justify;
+}
