@@ -1,0 +1,110 @@
+/* ---------- Base + Purple Theme ---------- */
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(1200px 600px at 20% -10%, rgba(168,85,247,.25), transparent 60%),
+    radial-gradient(1000px 500px at 120% 20%, rgba(59,130,246,.18), transparent 60%),
+    #120a1a;
+  color: #f5f3ff;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+  line-height: 1.65;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+.main { flex: 1; }
+
+/* ---------- Header + Nav ---------- */
+.site-header {
+  background: rgba(24,16,38,.7);
+  border-bottom: 1px solid #3b1a5b;
+  backdrop-filter: blur(6px);
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.nav-list a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #ede9fe;
+  background: #2a1142;
+  padding: .55rem .85rem;
+  border-radius: .6rem;
+  box-shadow: 0 0 0 1px #5b21b6 inset, 0 0 20px rgba(139,92,246,.25);
+}
+.nav-list a:hover {
+  background: #3b1a5b;
+  text-decoration: underline;
+  box-shadow: 0 0 0 1px #7c3aed inset, 0 0 28px rgba(168,85,247,.35);
+}
+.nav-list a:visited { color: #c4b5fd; }
+
+/* ---------- Support Card ---------- */
+.support-card {
+  text-align: center;
+  margin: 3rem auto;
+  padding: 2rem;
+  max-width: 600px;
+  background: rgba(20,9,34,.6);
+  border: 1px solid #3b1a5b;
+  border-radius: 1.2rem;
+  box-shadow: 0 10px 40px rgba(112,26,117,.25);
+}
+.support-card h2 {
+  margin-top: 0;
+  color: #d8b4fe;
+}
+.iban-label {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #c4b5fd;
+}
+.iban-number {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f0abfc;
+  letter-spacing: 2px;
+  background: rgba(17,8,28,.7);
+  padding: .8rem 1rem;
+  border-radius: .75rem;
+  display: inline-block;
+  border: 1px solid #5b21b6;
+  box-shadow: 0 0 25px rgba(168,85,247,.4);
+  user-select: all; /* allows easy copy */
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: rgba(24,16,38,.7);
+  border-top: 1px solid #3b1a5b;
+  text-align: center;
+}
+.site-footer p {
+  color: #d8b4fe;
+  margin: .75rem 0;
+}
+
+/* ---------- Accessibility ---------- */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: #000;
+  color: #fff;
+  padding: .5rem .75rem;
+  border-radius: .375rem;
+}

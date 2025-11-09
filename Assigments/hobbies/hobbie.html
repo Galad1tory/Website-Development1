@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My hobbies — Serhii Rozvorovych</title>
+  <link rel="stylesheet" href="/Assigments/hobbies/hobbie.css" />
+</head>
+<body class="page">
+  <header class="site-header">
+    <div class="container">
+      <a class="skip-link" href="#main">Skip to content</a>
+      <h1 id="site-title">My hobbies</h1>
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="/Assigments/main page/main.html">Home</a></li>
+          <li><a href="/Assigments/about me/about.html">About me</a></li>
+          <li><a href="/Assigments/contact/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container main">
+    <!-- Spotify-style Now Playing -->
+    <section class="now-playing">
+      <div class="song-card">
+        <img src="/Assigments/hobbies/pic/pic for song.png" alt="Song cover" class="song-cover" />
+        <div class="song-info">
+          <h2 class="song-title">Винуватих нема</h2>
+          <p class="song-artist">Nikow</p>
+
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+          <p class="song-time">1:12 / 3:45</p>
+
+          <!-- audio player (use latin filename, no spaces) -->
+          <audio controls class="song-audio">
+            <source src="/Assigments/hobbies/audio/винуватих нема.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <h2 id="hero-title">Things I enjoy doing</h2>
+      <p>I’m into music and production, traveling to new places, tech tinkering, and upgrading car electronics.</p>
+    </section>
+
+    <!-- Hobbies -->
+    <section class="cards">
+      <article class="card">
+        <h3>Music &amp; Production</h3>
+        <p>I’m learning to write and produce my own tracks — beats, melodies, and vocal ideas.</p>
+      </article>
+
+      <article class="card">
+        <h3>Travel</h3>
+        <p>I love exploring new cities. My recent road trip: Ireland → France → Paris → Prague → Warsaw → Berlin → Amsterdam → Brussels.</p>
+      </article>
+
+      <article class="card">
+        <h3>Car Electronics</h3>
+        <p>Upgrading car audio and lighting systems for fun — small projects, big joy.</p>
+      </article>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery-wrap">
+      <h2>Snapshots</h2>
+      <div class="gallery" role="list">
+        <figure class="shot" role="listitem">
+          <video controls poster="/Assigments/hobbies/pic/music-preview.jpg">
+            <source src="/Assigments/hobbies/pic/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>Music practice session</figcaption>
+        </figure>
+
+        <figure class="shot" role="listitem">
+          <img src="/Assigments/hobbies/pic/travel.jpg" alt="Travel photo" />
+          <figcaption>Travel photo</figcaption>
+        </figure>
+
+        <figure class="shot" role="listitem">
+          <img src="/Assigments/hobbies/pic/car.jpg" alt="Car work" />
+          <figcaption>Car upgrade</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Favourites -->
+    <section class="favourites">
+      <h2>My Favourites</h2>
+      <p>Some of the music, games, and films that inspire me.</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Top picks</caption>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Title</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Music</td><td>Nikow - Винуватих нема, Teen - Останній перший крок</td>
+            <tr><td>Game</td><td>CLASH ROYALE</td>
+            <tr><td>Film</td><td>Hacksaw Ridge</td>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-links">
+      <p><a href="/Assigments/support the creator/suport.html">support the creator</a></p>
+      <p>&copy; 2025 Serhii Rozvorovych</p>
+    </div>
+  </footer>
+</body>
+</html>
