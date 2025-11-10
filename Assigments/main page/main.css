@@ -1,4 +1,4 @@
-/* ---------- Base + Sticky Footer ---------- */
+/* Footer */
 * { box-sizing: border-box; }
 html, body { height: 100%; margin: 0; }
 
@@ -19,7 +19,7 @@ html, body { height: 100%; margin: 0; }
 .container { max-width: 1100px; margin: 0 auto; padding: 1rem; }
 .main { flex: 1; }
 
-/* ---------- Header + Navigation ---------- */
+
 .site-header {
   background-color: rgba(59,37,17,0.75);
   border-bottom: 1px solid #5c3b1a;
@@ -45,7 +45,7 @@ html, body { height: 100%; margin: 0; }
 .nav-list a:hover { background: #4c341b; text-decoration: underline; }
 .nav-list a:visited { color: #f97316; }
 
-/* -- hero Section -- */
+/* hero */
 .hero {
   background: rgba(59,37,17,0.7);
   border: 1px solid #5c3b1a;
@@ -58,7 +58,7 @@ html, body { height: 100%; margin: 0; }
 .hero h2 { margin-top: 0; color: #fbbf24; }
 .hero p { color: #fff7ed; }
 
-/* ---------- pic + Text ---------- */
+/*  pic + Text  */
 :root { --portrait-size: 220px; }
 
 .portrait-wrap {
@@ -110,7 +110,6 @@ html, body { height: 100%; margin: 0; }
   color: #fbbf24;
 }
 
-/* ---------- Footer ---------- */
 .site-footer {
   background-color: rgba(59,37,17,0.75);
   border-top: 1px solid #5c3b1a;
@@ -120,8 +119,6 @@ html, body { height: 100%; margin: 0; }
   color: #fbbf24;
   margin: .75rem 0;
 }
-
-/* footer link */
 .site-footer a {
   text-decoration: none;
   color: #fff7ed;
@@ -139,13 +136,4 @@ html, body { height: 100%; margin: 0; }
 
 .site-footer a:visited {
   color: #f97316;
-}
-
-
-/* ---------- Responsive ---------- */
-@media (max-width: 600px) {
-  :root { --portrait-size: 160px; }
-  .name-text { font-size: 16px; }
-  .name-ring { bottom: 32px; }
-  .bottom-text { font-size: 1rem; }
 }

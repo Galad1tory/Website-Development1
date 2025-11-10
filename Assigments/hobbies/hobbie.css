@@ -1,4 +1,4 @@
-/* ---------- Base + Sticky Footer (same as About) ---------- */
+
 * { box-sizing: border-box; }
 html, body { height: 100%; margin: 0; }
 
@@ -9,7 +9,7 @@ html, body { height: 100%; margin: 0; }
   background:
     radial-gradient(1200px 600px at 20% -10%, rgba(168,85,247,.25), transparent 60%),
     radial-gradient(1000px 500px at 120% 20%, rgba(59,130,246,.18), transparent 60%),
-    #120a1a; /* deep purple */
+    #120a1a;
   color:#f5f3ff;
   font-family:system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
   line-height:1.65;
@@ -18,7 +18,6 @@ html, body { height: 100%; margin: 0; }
 .container{ max-width:1100px; margin:0 auto; padding:1rem; }
 .main{ flex:1; }
 
-/* ---------- Header + Nav ---------- */
 .site-header{
   background:rgba(24,16,38,.7);
   border-bottom:1px solid #3b1a5b;
@@ -40,30 +39,25 @@ html, body { height: 100%; margin: 0; }
 }
 .nav-list a:visited{ color:#c4b5fd; }
 
-/* Neon wrapper look that matches your card */
+
 .song-audio {
   width: 100%;
   margin-top: .7rem;
-  padding: .35rem;                 /* slim padding around the native UI */
-  border-radius: .75rem;
+  padding: .35rem;                 
   background: rgba(17, 8, 28, 0.7);
   border: 1px solid #3b1a5b;
   box-shadow: 0 0 0 1px #6d28d9 inset, 0 0 22px rgba(168,85,247,.35);
-  accent-color: #a855f7;           /* slider + focus color */
+  accent-color: #a855f7;           
 }
 
-/* hover = stronger glow */
+
 .song-audio:hover {
   box-shadow: 0 0 0 1px #7c3aed inset, 0 0 32px rgba(168,85,247,.55);
   transform: translateY(-1px);
   transition: box-shadow .2s ease, transform .2s ease;
 }
+.song-audio { height: 40px; }      
 
-/* make the audio element height consistent across browsers */
-.song-audio { height: 40px; }      /* adjust if too tall/short */
-
-
-/* ---------- Hero ---------- */
 .hero{
   background:rgba(20,9,34,.6);
   border:1px solid #3b1a5b;
@@ -75,8 +69,6 @@ html, body { height: 100%; margin: 0; }
   box-shadow:0 10px 40px rgba(112,26,117,.25);
 }
 .hero h2{ margin-top:0; color:#d8b4fe; }
-
-/* ---------- Hobbies Cards ---------- */
 .cards{ display:flex; gap:16px; flex-wrap:wrap; align-items:stretch; }
 .card{
   flex:1 1 260px;
@@ -92,8 +84,6 @@ html, body { height: 100%; margin: 0; }
   margin:.4rem 0; padding:.5rem .6rem; border-radius:.5rem;
   border:1px solid rgba(216,180,254,.25);
 }
-
-/* ---------- Gallery ---------- */
 .gallery-wrap{ margin-top:1rem; }
 .gallery-wrap h2{ color:#d8b4fe; }
 
@@ -123,14 +113,12 @@ html, body { height: 100%; margin: 0; }
   position:relative; z-index:1; text-align:center; color:#e9d5ff;
   font-size:.95rem; margin-top:.4rem;
 }
-/* hover glow + rubric nth-of-type */
 .shot:hover{ box-shadow:0 0 0 1px #7c3aed inset, 0 0 42px rgba(168,85,247,.55); }
 .shot:hover img,
 .shot:hover video{ transform:translateY(-2px); transition:transform .2s ease; }
 .gallery .shot:nth-of-type(odd){ border-color:#6d28d9; }
 .gallery .shot:nth-of-type(even){ border-color:#7c3aed; }
 
-/* ---------- Favourites Table ---------- */
 .favourites h2{ color:#d8b4fe; }
 .table-wrap{ overflow-x:auto; }
 table{
@@ -146,8 +134,6 @@ thead th{
 tbody td{ padding:10px; border-bottom:1px solid rgba(255,255,255,.08); }
 tbody tr:nth-of-type(odd){ background:rgba(255,255,255,.03); }
 tbody tr:hover{ background:rgba(255,255,255,.06); }
-
-/* ---------- Footer ---------- */
 .site-footer{
   background:rgba(24,16,38,.7);
   border-top:1px solid #3b1a5b;
@@ -165,16 +151,8 @@ tbody tr:hover{ background:rgba(255,255,255,.06); }
 .site-footer a:visited{ color:#c4b5fd; }
 .site-footer p{ text-align:center; color:#d8b4fe; margin:.75rem 0; }
 
-/* ---------- Accessibility ---------- */
 .skip-link{ position:absolute; left:-9999px; top:-9999px; }
 .skip-link:focus{
   left:1rem; top:1rem; background:#000; color:#fff;
   padding:.5rem .75rem; border-radius:.375rem;
-}
-
-/* ---------- Responsive ---------- */
-@media (max-width:480px){
-  .song-cover{ width:84px; height:84px; }
-  .gallery{ grid-template-columns:repeat(2, 1fr); }
-  .shot img, .shot video{ height:140px; }
 }
