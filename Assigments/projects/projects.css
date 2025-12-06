@@ -1,0 +1,128 @@
+/* Dark clean background */
+body {
+  background: #120016;
+  color: #ffffff;
+  font-family: system-ui, sans-serif;
+}
+
+/* Popup nav */
+.page-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+.nav-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.burger {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 40px;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid #c77dff;
+  background: #24002d;
+  cursor: pointer;
+  padding: 0;
+}
+.burger span {
+  width: 18px;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 999px;
+  margin-inline: auto;
+}
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-popup {
+  position: absolute;
+  top: 100%;
+  margin-top: 6px;
+  right: 0;
+  display: none;
+  margin: 0;
+  padding: .4rem 0;
+  min-width: 200px;
+  background: #24002d;
+  border-radius: .6rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,.5);
+  border: 1px solid #c77dff;
+}
+.nav-wrapper:hover .nav-popup,
+.nav-wrapper:focus-within .nav-popup,
+.nav-popup:hover {
+  display: block;
+}
+.nav-popup li { margin: 0; }
+.nav-popup a {
+  display: block;
+  padding: .5rem .9rem;
+  color: #ffffff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.nav-popup a:hover { background: #3b0050; text-decoration: underline; }
+.nav-popup a:visited { color: #ffd6ff; }
+
+/* Menu */
+.main-menu {
+  background: #24002d !important;
+  border-bottom: 2px solid #c77dff !important;
+}
+
+/* Page wrapper */
+.page-wrap {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+/* Headers */
+.ui.header {
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  text-shadow: 0 0 8px rgba(255,255,255,0.45);
+}
+
+/* CARDS — very bright */
+.ui.card {
+  background: #2d0040 !important;
+  border: 2px solid #c77dff !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 18px rgba(199,125,255,0.45) !important;
+}
+
+.ui.card .meta {
+  color: #ffd6ff !important;
+}
+
+/* TABLE — high brightness */
+.ui.celled.table {
+  background: #2d0040 !important;
+  border: 2px solid #c77dff !important;
+  color: #ffffff !important;
+}
+
+.ui.celled.table thead th {
+  background: #7b2cbf !important;
+  color: #ffffff !important;
+  border-bottom: 2px solid #c77dff !important;
+}
+
+.ui.celled.table tbody td {
+  color: #f8eaff !important;
+  background: #3b0050 !important;
+}
+
+/* Info box */
+.note-message {
+  background: #2d0040 !important;
+  color: #ffffff !important;
+  border: 2px solid #c77dff !important;
+  box-shadow: 0 0 15px rgba(199,125,255,0.45);
+}

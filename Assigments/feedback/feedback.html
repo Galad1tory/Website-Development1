@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feedback — Serhii Rozvorovych</title>
+  <link rel="stylesheet" href="feedback.css" />
+</head>
+<body class="page">
+  <header class="site-header">
+    <div class="container">
+      <a class="skip-link" href="#main">Skip to content</a>
+      <h1 id="site-title">Feedback</h1>
+      <nav aria-label="Primary">
+        <div class="nav-wrapper">
+          <button class="burger" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-list nav-popup">
+            <li><a href="../main page/main.html">Home</a></li>
+            <li><a href="../about me/about.html">About me</a></li>
+            <li><a href="../hobbies/hobbie.html">My hobbies</a></li>
+            <li><a href="../projects/projects.html">Projects</a></li>
+            <li><a href="../music/music.html">Music &amp; Travel</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+            <li><a href="../feedback/feedback.html">Feedback</a></li>
+            <li><a href="../support the creator/suport.html">Support the creator</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container main">
+    <section class="hero">
+      <h2>Tell me what you think</h2>
+      <p>Use this form to share your thoughts about my website or my projects.</p>
+    </section>
+
+    <section class="form-section">
+      <h2>Feedback form</h2>
+
+      <form class="feedback-form" action="#" method="post" novalidate>
+        <!-- left column -->
+        <div class="form-column">
+          <div class="field">
+            <label for="name">Name<span class="req">*</span></label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email<span class="req">*</span></label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="field">
+            <label for="age">Age</label>
+            <input id="age" name="age" type="number" min="10" max="120" />
+          </div>
+
+          <div class="field">
+            <label for="favourite">Favourite hobby</label>
+            <select id="favourite" name="favourite">
+              <option value="">-- Please choose --</option>
+              <option value="music">Music &amp; production</option>
+              <option value="travel">Travel</option>
+              <option value="tech">Tech &amp; gadgets</option>
+              <option value="car">Car electronics</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- right column -->
+        <div class="form-column">
+          <fieldset class="field">
+            <legend>How did you find this site?<span class="req">*</span></legend>
+            <label>
+              <input type="radio" name="source" value="friend" required />
+              Friend
+            </label>
+            <label>
+              <input type="radio" name="source" value="college" />
+              College / lecturer
+            </label>
+            <label>
+              <input type="radio" name="source" value="social" />
+              Social media
+            </label>
+            <label>
+              <input type="radio" name="source" value="other" />
+              Other
+            </label>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend>What should I improve?</legend>
+            <label>
+              <input type="checkbox" name="improve" value="design" />
+              Design / layout
+            </label>
+            <label>
+              <input type="checkbox" name="improve" value="content" />
+              Text / content
+            </label>
+            <label>
+              <input type="checkbox" name="improve" value="usability" />
+              Ease of use
+            </label>
+          </fieldset>
+
+          <div class="field">
+            <label for="message">Message<span class="req">*</span></label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit">Send feedback</button>
+          <p class="hint">Fields marked with <span class="req">*</span> are required.</p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-links">
+      <p><a href="../support the creator/index.html">support the creator</a></p>
+      <p>&copy; 2025 Serhii Rozvorovych</p>
+    </div>
+  </footer>
+</body>
+</html>
